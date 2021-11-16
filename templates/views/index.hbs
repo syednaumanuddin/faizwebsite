@@ -1,0 +1,271 @@
+<html>
+<head>
+     <meta charset="utf-8">
+<link rel="stylesheet" href="css/main.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+
+
+</head>
+    <body>
+
+        
+{{>header}}
+<div class="container-fluid" style="position: relative;text-align:center;color:white">
+<img src="ForkliftUSEDANDRENTAL.JPG" style="width: 100%;height:450px" alt="Responsive image">
+<div style="  position: absolute;bottom: 8px;left: 16px;"> <h3>ForkLift Rental in Dubai,UAE
+Used ForkLift for sale in Dubai,Abu Dhabi,UAE</h3></div>
+</div>
+<div class="container">
+<h3 class="display-4 "><strong>Used ForkLift</strong></h3>
+<p class="lead" style="font-size:x-large">Liftronic Machinery Rental
+   proudly serves 4 Emirates with Dubai  servicing locations with high quality
+    material handling offerings. We provide exceptional service and products
+     through the Dubai for companies of all sizes. Every dealer features expert
+      staff and technicians that help companies like yours reach their material handling goals.<br><br>
+      Liftronic machinery wisely selects used forklift or pre-owned forklift for Sell like good condition and less used forklift.
+Our used forklift or Pre-owned forklifts are inspected by expect technician for sell.     
+               Our forklifts are Reconditioned by skill and experienced technicians.
+                We purchase surplus equipment and we will accept your old model as a trade in.
+<br>	<br>As you begin searching for your next forklift purchase, consider buying a used model rather than a new one. There are several reasons why purchasing a used forklift makes more sense. It can save you a decent amount of cash for your equipment and operating budgets and is also environmentally friendly for Example LPG, Gas and Electric forklift , as it’s one less forklift that needs to be manufactured to be bought new. Purchasing used heavy forklift equipment can also give peace of mind that your forklift has had its durability thoroughly tested and has stood up to the test of rugged conditions.
+<br><br><strong>When Is Buying A Used Forklift Practical?</strong><br> <br>
+	Buying a used forklift can help you budget-wise when you have a sudden equipment need for a forklift. A used forklift can be a fast replacement if your existing equipment broke down and cannot be repaired. When the business requirements of the forklift fleet grow suddenly or quickly, a used forklift can help optimize your fleet, delivering maximum performance and the output you need.
+
+      
+      </p>
+
+
+
+
+</div>
+<Div class="Container">
+     {{#each ItemList as |Item|}}
+     
+
+
+<div class="row">
+  <div class="col">
+    
+    <br>
+    <h1>{{Item.name}}</h1>
+    
+  </div>
+</div>
+  <div class="row">
+  <div class="col">
+    
+    
+  <div class="show">
+    <img src="equipments/{{Item.img1}}.jpg" id="show-img" class="{{Item.name}} border rounded">
+  </div>
+  <div class="small-img">
+    <div class="small-container">
+      <div id="small-img-roll">
+          <script type="text/javascript">
+$("document").ready(function() {
+  $("#{{Item.img1}}").click(function() {
+    // "#img_change" and not "img_change"
+    $(".{{Item.name}}").attr("src",$(this).attr('src'));
+
+  });
+});
+</script>
+        <img src="equipments/{{Item.img1}}.jpg" class="show-small-img border rounded" id="{{Item.img1}}" alt="">
+             <script type="text/javascript">
+
+$("document").ready(function() {
+  $("#{{Item.img2}}").click(function() {
+    // "#img_change" and not "img_change"
+    $(".{{Item.name}}").attr("src",$(this).attr('src'));
+    
+  });
+});
+</script>
+         
+        <img src="equipments/{{Item.img2}}.jpg" class="show-small-img border rounded"  id="{{Item.img2}}" alt="">
+                <script type="text/javascript">
+
+$("document").ready(function() {
+  $("#{{Item.img3}}").click(function() {
+    // "#img_change" and not "img_change"
+    $(".{{Item.name}}").attr("src",$(this).attr('src'));
+      
+  });
+});
+</script>
+
+        <img src="equipments/{{Item.img3}}.jpg" class="show-small-img border rounded" id="{{Item.img3}}" alt="">
+           <script type="text/javascript">
+
+$("document").ready(function() {
+  $("#{{Item.img4}}").click(function() {
+    // "#img_change" and not "img_change"
+    $(".{{Item.name}}").attr("src",$(this).attr('src'));
+       
+  });
+});
+</script>
+        <img src="equipments/{{Item.img4}}.jpg" class="show-small-img border rounded" id="{{Item.img4}}" alt="">
+                  <script type="text/javascript">
+
+$("document").ready(function() {
+  $("#{{Item.img5}}").click(function() {
+    // "#img_change" and not "img_change"
+    $(".{{Item.name}}").attr("src",$(this).attr('src'));
+    
+  });
+});
+</script>
+        <img src="equipments/{{Item.img5}}.jpg" class="show-small-img border rounded"  id="{{Item.img5}}" alt="">
+                 <script type="text/javascript">
+
+$("document").ready(function() {
+  $("#{{Item.img6}}").click(function() {
+    // "#img_change" and not "img_change"
+    $(".{{Item.name}}").attr("src",$(this).attr('src'));
+     
+  });
+});
+</script>
+        <img src="equipments/{{Item.img6}}.jpg" class="show-small-img border rounded"  id="{{Item.img6}}" alt="">
+           
+
+      </div>
+    </div>
+  
+  </div>
+  </div>
+  
+    <div class="col">
+  <table class="table table-stripped">
+    
+     <tr>
+      <td>
+     <B>Model</B>   
+      </td>
+      <td>
+        {{Item.Model}}
+      </td>
+    </tr>
+        <tr>
+      <td>
+      <B>capacity</B>  
+      </td>
+      <td>
+        {{Item.capacity}}
+      </td>
+    </tr>
+            <tr>
+      <td>
+   <B>Motor</B>     
+      </td>
+      <td>
+        {{Item.motor}}
+      </td>
+    </tr>
+            <tr>
+      <td>
+        <B>Transmission</B>
+      </td>
+      <td>
+        {{Item.transmission}}
+      </td>
+    </tr>
+            <tr>
+      <td>
+     <B>   Year of Manufacture</B>
+      </td>
+      <td>
+        {{Item.yearofmanufacture}}
+      </td>
+    </tr>
+            <tr>
+      <td>
+       <B> Mast</B>
+      </td>
+      <td>
+        {{Item.mast}}
+      </td>
+    </tr>
+            <tr>
+      <td>
+       <B> Max Lifting</B>
+      </td>
+      <td>
+        {{Item.maxlifting}}
+      </td>
+    </tr>
+        <tr>
+      <td>
+       <B> Lowered Height</B>
+      </td>
+      <td>
+        {{Item.loweredheight}}
+      </td>
+    </tr>
+            <tr>
+      <td>
+      <B>  Details</B>
+      </td>
+      <td>
+
+        <p>{{Item.details}}</p>
+
+      </td>
+    </tr>
+  </table>
+    </div>
+  </div>
+
+<hr>
+   {{/each}}
+ </Div>
+
+ 
+<br>
+<br>
+ 
+ <div class="container-fluid bg-secondary text-light text-center" style="height: 20%;padding:15px">
+   <h1>We carry used forklift sale that<br> range in the following types of equipment:</h1>
+
+ </div>
+<div class="container">
+ <div class="row lead">
+<div class="col">
+<ul>
+<li>Internal Combustion Powered Counterbalanced Forklift &#8211; Cushion Tires</li>
+<li>Internal Combustion Powered Counterbalanced Forklift &#8211; Puenmatic Tires</li>
+<li>Electric forklifts</li>
+<li>Electric counterbalanced trucks</li>
+<li>Rider order picking trucks</li>
+<li>Walkie order picking trucks</li>
+<li>Reach trucks</li>
+<li>Walkie stackers</li>
+<li>Rider stackers</li>
+<li>Walkie low lift trucks</li>
+</ul>
+</div>
+<div class="col">
+    <ul>
+<li>Rider low lift trucks</li>
+<li>Towing tractors</li>
+<li>Hand pallet trucks</li>
+<li>Fuel cell forklifts</li>
+<li>Sideloaders</li>
+<li>Telescopic handlers</li>
+<li>Articulated very narrow aisle counterbalanced trucks</li>
+<li>Guided very narrow aisle truck</li>
+<li>Truck-mounted forklifts / sod loader</li>
+</ul>
+</div>
+ </div>
+ </div>
+{{>footer}}
+    </body>
+</html>
+
+

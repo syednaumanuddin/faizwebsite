@@ -1,0 +1,238 @@
+<html>
+<head>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+</head>
+<body>
+{{>header}}
+
+
+ 
+        <form method="POST" action="/api/updateitem" enctype="multipart/form-data" >
+  <table class="table form w-50" style="margin-top: 10%;  margin-left:5% ">
+            <tr>
+                <td>
+                    Name
+                </td>
+                <td>
+                    :
+                </td>
+                <td><input type="text"  value={{name}} class="form-control" name="name" /> </td>
+            </tr>
+            <tr>
+
+
+                <td>
+                    Model
+                </td>
+                <td>
+                    :
+                </td>
+                <td><input type="text" value={{Model}} class="form-control" name="Model" /> </td>
+            </tr>
+            <tr>
+
+
+                <td>
+                    capacity
+                </td>
+                <td>
+                    :
+                </td>
+                <td><input type="text" value={{capacity}} name="capacity" class="form-control" /> </td>
+            </tr>
+            <tr>
+
+
+                <td>
+                    motor
+                </td>
+                <td>
+                    :
+                </td>
+                <td><input type="text"  value={{motor}} name="motor" class="form-control" /> </td>
+            </tr>
+            <tr>
+
+
+                <td>
+                    transmission
+                </td>
+                <td>
+                    :
+                </td>
+                <td><input type="text" value={{transmission}} name="transmission" class="form-control" /> </td>
+            </tr>
+            <tr>
+
+
+                <td>
+                    yearofmanufacture
+                </td>
+                <td>
+                    :
+                </td>
+                <td> <input name="yearofmanufacture"  value={{yearofmanufacture}} class="form-control" type='text' multiple/></td>
+            </tr>
+  <tr>
+
+
+                <td>
+                    mast
+                </td>
+                <td>
+                    :
+                </td>
+                <td><input type="text" class="form-control" value={{mast}} name="mast" /> </td>
+            </tr>
+            <tr>
+                  <tr>
+
+
+                <td>
+                    max lifting
+                </td>
+                <td>
+                    :
+                </td>
+                <td><input type="text" class="form-control" value={{maxlifting}} name="maxlifting" /> </td>
+            </tr>
+              <tr>
+
+
+                <td>
+                    loweredheight
+                </td>
+                <td>
+                    :
+                </td>
+                <td><input type="text" class="form-control" value={{loweredheight}} name="loweredheight" /> </td>
+            </tr>
+              <tr>
+
+
+                <td>
+                    details
+                </td>
+                <td>
+                    :
+                </td>
+                <td><textarea name="details" value={{details}}  class="form-control" id="" cols="30" rows="10"></textarea> </td>
+            </tr>
+              <tr>
+
+
+                <td>
+                    upload Files
+                </td>
+                <td>
+                    :
+                </td>
+                <td><input type="file" class="form-control" name="photos" multiple /> </td>
+            </tr>
+            <tr>
+                  <tr>
+
+
+                <td>
+                  img1
+                </td>
+                <td>
+                    :
+                </td>
+                <td><input type="text" value={{img1}} class="form-control" name="img1" /> </td>
+            </tr>
+            <tr>
+                  <tr>
+
+
+                <td>
+                   img2
+                </td>
+                <td>
+                    :
+                </td>
+                <td><input type="text" value={{img2}} class="form-control" name="img2" /> </td>
+            </tr>
+            <tr>
+                  <tr>
+
+
+                <td>
+                    img3
+                </td>
+                <td>
+                    :
+                </td>
+                <td><input type="text" value={{img3}} class="form-control" name="img3" /> </td>
+            </tr>
+            <tr>
+                  <tr>
+
+
+                <td>
+                img4
+                </td>
+                <td>
+                    :
+                </td>
+                <td><input type="text" value={{img4}} class="form-control" name="img4" /> </td>
+            </tr>
+            <tr>
+                  <tr>
+
+
+                <td>
+                  img5
+                </td>
+                <td>
+                    :
+                </td>
+                <td><input type="text" value={{img5}} class="form-control" name="img5" /> </td>
+            </tr>
+            <tr>
+                  <tr>
+
+
+                <td>
+                  img 6
+                </td>
+                <td>
+                    :
+                </td>
+                <td><input type="text" value={{img6}} class="form-control" name="img6" /> </td>
+            </tr>
+                <td colspan="3">
+
+                    <input type="submit"  class="form-control btn btn-primary" value="Update" />
+                    
+                </td>
+            </tr>
+            <tr>
+               
+                    <td>
+
+                </td>
+               
+            </tr>
+        
+        </form>
+           <tr>
+               <td>
+ <form method="POST"  action="api/logout" >
+<input type="submit" value="Logout" class="btn btn-warning" /> 
+        </form>
+               </td>
+           </tr>
+        </table>
+       
+</div>
+{{>footer}}
+</body>
+
+</html>
