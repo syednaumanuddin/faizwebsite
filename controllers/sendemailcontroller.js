@@ -6,7 +6,7 @@ const sendemail=async(req,res,next)=>{
         service: 'gmail',
         auth: {
             user: 'sender.liftronic@gmail.com',
-            pass: 'rentAl@8855'
+            pass: 'xnteglcqiorzcbbl'
         }
     });
       
